@@ -3,4 +3,4 @@
 </h1>
 # ER Diagram(LMS)
 
-![image](https://github.com/SushantK98/Library_Management_system_SQL/blob/main/libManagement.png)
+![image](https://github.com/Sushant98K/Library_Management_system_SQL/blob/main/libManagement.png)
