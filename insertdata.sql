@@ -1,4 +1,4 @@
-/* 16. Insert data into table tbl_author */
+/* 1. Insert data into table tbl_author */
 use lib_mngmt_system;
 select * from author;
 insert into author (first_name, last_name)
@@ -13,7 +13,7 @@ values('PK', 'Nag'), ('JP', 'Holman'), ('APJ', 'Kalam'), ('E', 'Sreedharan'),('R
 ('Anton', 'Chekhov'), ('Leo', 'Tolstoy'), ('Mahatma', 'Gandhi'), ('JL',
 'Nehru'),('Nelson', 'Mandela');
 
-/* 17. Insert data into table tbl_category */
+/* 2. Insert data into table tbl_category */
 select * from category;
 insert into category (category_name)
 values('Engineering&Technology'), ('Spritualism'), ('Self_Development'),
@@ -21,7 +21,7 @@ values('Engineering&Technology'), ('Spritualism'), ('Self_Development'),
 ('Crime'), ('Comedy'), ('Romantic'), ('Folk_Tales'), ('Fiction'),
 ('Non_Fiction'), ('Poetry'), ('Drama'), ('Adventure'), ('Mythology');
 
-/* 18. Insert data into table tbl_publisher */
+/* 3. Insert data into table tbl_publisher */
 select * from publisher;
 insert into publisher (publisher_name, publication_language, publication_type)
 values('ABC','English','Journals'), ('ABC','Hindi','Journals'),
@@ -30,7 +30,7 @@ values('ABC','English','Journals'), ('ABC','Hindi','Journals'),
 ('XYZ','English','Books'), ('XYZ','Hindi','Books'),
 ('ZAB','English','Magzines'),('ZAB','Hindi','Magzines');
 
-/* 19. Insert data into table tbl_location */
+/* 4. Insert data into table tbl_location */
 select * from location;
 insert into location (shelf_no, shelf_name, floor_no)
 values('10001', 'Engineering_Mechanical',1), ('10001', 'Engineering_Mechanical',2),
@@ -50,7 +50,7 @@ values('10001', 'Engineering_Mechanical',1), ('10001', 'Engineering_Mechanical',
 'Literature',3),('30003', 'Literature',4),
 ('40001', 'Journals',1), ('40001', 'Journals',2), ('40001', 'Journals',3);
 
-/* 20. Insert data into table tbl_book */
+/* 5. Insert data into table tbl_book */
 select * from book;
 insert into book (isbn_code, book_title, category_id, publisher_id, publication_year, book_edition, copies_total, copies_available, location_id)
 values('9876543210001', 'Thermodynamics', 1, 7, '2016',3,15,10,1),
@@ -89,7 +89,7 @@ values('9876543210001', 'Thermodynamics', 1, 7, '2016',3,15,10,1),
 ('9976443210004', 'Gaban', 10, 8, '2012',10,2,0,24),
 ('9976549210004', 'Idgah', 10, 8, '2012',10,2,0,24);
 
-/* 21. Insert data into table tbl_member_status */
+/* 6. Insert data into table tbl_member_status */
 select * from member_status;
 insert into member_status (account_type, account_status, membership_start_date, membership_end_date)
 values('student','active','2018','2020'),
@@ -104,7 +104,7 @@ values('student','active','2018','2020'),
 ('staff','active','2020','2022'),
 ('staff','inactive','2015','2016');
 
-/* 22. Insert data into table tbl_member*/
+/* 7. Insert data into table tbl_member*/
 select * from members;
 insert into members(first_name, last_name, city, mobile_no, email_id, date_of_birth, active_status_id)
 values('A','Kumar','Delhi','9999999999','a@xyz.com','1996-05-08',1),
@@ -119,14 +119,14 @@ values('A','Kumar','Delhi','9999999999','a@xyz.com','1996-05-08',1),
 ('Z','Khanna','Delhi','9999999999','z@xyz.com','1970-03-29',11);
 
 
-/* 23. Insert data into table tbl_library_staff*/
+/* 8. Insert data into table tbl_library_staff*/
 select * from library_staff;
 insert into library_staff (staff_name, staff_designation)
 values('X Patel', 'Librarian'),
 ('Y Arora', 'Librarian'),
 ('R Tiwari', 'Head Librarian');
 
-/* 24. Insert data into table tbl_book_issue*/
+/* 9. Insert data into table tbl_book_issue*/
 select * from book_issue;
 insert into book_issue (book_id, member_id, issue_date, return_date, issue_status, issued_by_id)
 values(7, 1, '2022-11-02', '2022-11-18', 'overdue', 1),
@@ -137,14 +137,14 @@ values(7, 1, '2022-11-02', '2022-11-18', 'overdue', 1),
 (2, 4, '2022-10-10', '2022-10-25', 'overrdue', 1),
 (15, 5, '2022-10-10', '2022-10-25', 'overdue', 2);
 
-/* 25. Insert data into table tbl_fine_due*/
+/* 10. Insert data into table tbl_fine_due*/
 select * from fine_due;
 insert into fine_due (member_id,issue_id, fine_date, fine_total)
 values(5,12,'2022-11-20',25),
 (4,11,'2022-11-20',25),
 (1,6,'2022-11-20',150);
 
-/* 26. Insert data into table tbl_fine_payment*/
+/* 11. Insert data into table tbl_fine_payment*/
 select * from fine_payment;
 insert into fine_payment (member_id, payment_date, payment_amount)
 values(5,'2022-11-20',25),
@@ -152,7 +152,7 @@ values(5,'2022-11-20',25),
 (1,'2022-11-20',150);
 
 
-/* 27. Insert data into table tbl_book_request_status*/
+/* 12. Insert data into table tbl_book_request_status*/
 select * from book_request_status;
 insert into book_request_status (available_status, nearest_available_date)
 values('not_avail','2022-11-22'),
@@ -160,7 +160,7 @@ values('not_avail','2022-11-22'),
 ('not_avail','2022-11-25'),
 ('available','2022-11-16');
 
-/* 28. Insert data into table tbl_book_request*/
+/* 13. Insert data into table tbl_book_request*/
 select * from book_request;
 insert into book_request (book_id, member_id, request_date, available_status_id)
 values(33,1,'2022-11-15',3),
