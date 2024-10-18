@@ -134,3 +134,4 @@ ALTER TABLE `book_request` ADD CONSTRAINT `fk_request_book_id` FOREIGN KEY (`boo
 ALTER TABLE `book_request` ADD CONSTRAINT `fk_request_member_id` FOREIGN KEY (`member_id`) REFERENCES `member` (`member_id`);
 
 ALTER TABLE `book_request` ADD CONSTRAINT `fk_request_available_status_id` FOREIGN KEY (`available_status_id`) REFERENCES `book_request_status` (`available_status_id`);
+
